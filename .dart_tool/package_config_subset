@@ -1,7 +1,7 @@
 personal_expences_app
 2.18
-file:///Users/glebshalimov/Code/personal-expences-app/
-file:///Users/glebshalimov/Code/personal-expences-app/lib/
+file:///Users/glebshalimov/Code/personal-expenses-app/
+file:///Users/glebshalimov/Code/personal-expenses-app/lib/
 async
 2.14
 file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/
@@ -34,6 +34,10 @@ flutter_lints
 2.17
 file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/
 file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/lib/
+intl
+2.12
+file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/
+file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/lib/
 lints
 2.17
 file:///Users/glebshalimov/Code/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/lints-2.0.1/
