@@ -5,18 +5,21 @@ import './widgets/new_transaction.dart';
 import './widgets/chart.dart';
 import './models/transaction.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Personal Expenses',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.purple,
         accentColor: Colors.amber,
         fontFamily: 'Quicksand',
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
             titleTextStyle: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 20,
@@ -29,6 +32,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -81,8 +86,8 @@ class _MyHomePageState extends State<MyHomePage> {
       builder: (_) {
         return GestureDetector(
           onTap: () {},
-          child: NewTransaction(_addNewTransaction),
           behavior: HitTestBehavior.opaque,
+          child: NewTransaction(_addNewTransaction),
         );
       },
     );
@@ -98,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Personal Expenses',
           style: TextStyle(fontFamily: 'OpenSans'),
         ),

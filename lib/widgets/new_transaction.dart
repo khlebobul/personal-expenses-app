@@ -57,7 +57,7 @@ class _NewTransactionState extends State<NewTransaction> {
     return Card(
       elevation: 5,
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
@@ -88,13 +88,13 @@ class _NewTransactionState extends State<NewTransaction> {
                     ),
                   ),
                   ElevatedButton(
-                    child: Text(
+                    onPressed: _presentDatePicker,
+                    child: const Text(
                       'Choose Date',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    onPressed: _presentDatePicker,
                   ),
                 ],
               ),
